@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ting Chung Su</title>
+		<title>jQueryDemo tcsu</title>
 	
 		<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
 		<meta name="keywords" content="蘇鼎鈞, Ting Chung Su, NCTU, NCTU CS, NCTUCS"/>
@@ -16,7 +16,8 @@
 		<script src="./js/jqdemo.js"></script>
 	</head>
 
-	<body>    
+	<body>  
+	<div class = "clearfix">  
 		<!--  left side  -->
 		<div class = "half col-6">
 			<!--  hide/show  -->
@@ -25,10 +26,10 @@
 				<button class="demo show" >show</button>
 			</div>
 			<div class="demo hideshow">
-				<p class="text">
+				<code class="text">
 					$().hide(speed,callback);
 					$().show(speed,callback);
-				</p>
+				</code>
 			</div>
 			<hr>
 			
@@ -38,10 +39,22 @@
 				<button class="demo fadeOut">fadeOut</button>
 			</div>
 			<div class="demo fade">
-				<p class="text">
+				<code class="text">
 					$().fadeIn(speed,callback);
 					$().fadeOut(speed,callback);
-				</p>
+				</code>
+			</div>
+			<hr>
+			
+			<!--  fadeTo  -->
+			<div class="button">
+				<button class="demo fadeToHalf">fadeTo 0.5</button>
+				<button class="demo fadeTo1">fadeTo 1</button>
+			</div>
+			<div class="demo fadeTo">
+				<code class="text">
+					$().fadeTo(speed,opacity,callback);
+				</code>
 			</div>
 			<hr>
 			
@@ -51,12 +64,11 @@
 				<button class="demo slideDown">slideDown</button>
 			</div>
 			<div class="demo slide">
-				<p class="text">
+				<code class="text">
 					$().slideDown(speed,callback);
 					$().slideUp(speed,callback);
-				</p>
+				</code>
 			</div>
-			<hr>
 		</div>
 		<!--  right side  -->
 		<div class = "half col-6">
@@ -65,9 +77,9 @@
 				<button class="demo toggle">toggle</button>
 			</div>
 			<div class="demo toggle">
-				<p class="text">
+				<code class="text">
 					$().toggle(speed,callback);
-				</p>
+				</code>
 			</div>
 			<hr>
 			
@@ -76,9 +88,9 @@
 				<button class="demo fadeToggle">fadeToggle</button>
 			</div>
 			<div class="demo fadeToggle">
-				<p class="text">
+				<code class="text">
 					$().fadeToggle(speed,callback);
-				</p>
+				</code>
 			</div>
 			<hr>
 			
@@ -87,12 +99,36 @@
 				<button class="demo slideToggle">slideToggle</button>
 			</div>
 			<div class="demo slideToggle">
-				<p class="text">
+				<code class="text">
 					$().slideToggle(speed,callback);
-				</p>
+				</code>
 			</div>
 			<hr>
 		</div>
+	</div>
+	<hr>
+		
+		<!--  animation left -->
+	<div class = "container clearfix">
+		<div class="button">
+			<button class="demo left100">left +100px</button>
+			<button class="demo left-100">left -100px</button>
+			<button class="demo big50"> Side length +50px</button>
+			<button class="demo small50"> Side length -50px</button>
+			<br>
+			<button class="demo text1"> TEXT SIZE +1 </button>
+			<button class="demo text-1"> TEXT SIZE -1 </button>
+			<button class="demo fly"> Uses Queue </button>
+			<button class="demo stop"> Stop </button>
+		</div>
+		<div class="demo animation left ">TEXT</div>
+	</div>
+	
+	
+	<div class="container bottom">
+	</div>
+	
+	
 	</body>
 
 </html>
